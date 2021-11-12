@@ -8,7 +8,7 @@ def deposit(summ, time, money=0):
         nonlocal summ, time, money
         end_capitalization = 0
         end_money = 0
-        # Рассчитываем процент на внесённую сумму помесячно, день внесения первой суммы не учитываем.
+        # Рассчитываем процент на внесённую сумму помесячно, день внесения суммы не учитываем.
         for _el in range(time - 1):
             if _el > 0:
                 capitalization = (end_money * deposit_type[time] / 12) / 100
